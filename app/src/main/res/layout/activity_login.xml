@@ -20,7 +20,7 @@
         android:background="#08a0e9"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Login via Twitter"
+        android:text="Log in via Twitter"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
                                 @Override
                                 public void done(ParseException e) {
                                     if (null == e) {
-                                        alertDisplayer("First tome login!", "Welcome!");
+                                        alertDisplayer("First time login!", "Welcome!");
                                     } else {
                                         ParseUser.logOut();
                                         Toast.makeText(LoginActivity.this, "It was not possible to save your username.", Toast.LENGTH_LONG).show();
