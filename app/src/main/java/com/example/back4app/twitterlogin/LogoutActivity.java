@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.parse.Parse;
 import com.parse.ParseUser;
 
 public class LogoutActivity extends AppCompatActivity {
@@ -17,7 +16,6 @@ public class LogoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Parse.initialize(LogoutActivity.this);
         setContentView(R.layout.activity_logout);
 
 

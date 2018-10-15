@@ -12,11 +12,10 @@ import android.widget.Toast;
 import android.widget.Button;
 
 import com.parse.LogInCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
-import com.parse.ParseTwitterUtils;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.twitter.ParseTwitterUtils;
 
 import java.lang.String;
 
@@ -26,9 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Parse.initialize(this);
         // don't forget to change the line below with your Consumer Key and Consumer Secret of your Twitter App
-        ParseTwitterUtils.initialize("INSERT_YOUR_CONSUMER_KEY", "INSERT_YOUR_CONSUMER_SECRET");
         setContentView(R.layout.activity_login);
 
         final Button login_button = findViewById(R.id.login_button);
